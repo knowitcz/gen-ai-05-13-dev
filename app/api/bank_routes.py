@@ -1,7 +1,6 @@
-from http.client import HTTPException
 from typing import Annotated
 
-from fastapi import APIRouter, Depends
+from fastapi import APIRouter, Depends, HTTPException
 
 from app.api.dependencies import get_transfer_service
 from app.services.bank_service import TransferService
